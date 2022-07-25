@@ -1,0 +1,88 @@
+.contact{
+    border-radius: 1rem;
+    background: #272727;
+    height: 80vh;
+    .talk{
+        padding: 2rem;
+        button{
+            padding: .8rem;
+            border: none;
+            border-radius: 50%;
+            display: flex;
+            cursor: pointer;
+            background: linear-gradient(to right,rgb(231, 118, 53),rgb(218, 102, 25));
+            transition: .2s ease-out;
+            svg{
+                font-size: 1.4rem;
+                color: #fff;
+            }
+            p{
+                margin-left: 5px;
+                margin-top: 3px;
+                font-weight: 600;
+                color: #fff;
+            }
+            &:hover{
+                padding: .8rem 1.9rem;
+                border-radius: 20px;
+            }
+        }
+    }   
+    .reseaux{
+        position: absolute;
+        top: 37%;
+        left: 28%;
+        div{
+            display: flex;
+            margin-bottom: 1rem;
+            img{
+                width: 40px;
+                height: 40px;
+            }
+            p{
+                color: white;
+                font-size: 1.4rem;
+                transform: translate(10px,10px);
+                width: 210px;
+            }
+            &:nth-child(4){
+                p{
+                    transform: translate(10px,15px);
+                }
+            }
+        }
+    }
+    .msgBox{
+        position: absolute;
+        top: 37%;
+        left: 48%;
+        div{
+            display: flex;
+            margin-bottom: 1rem;
+            img{
+                width: 40px;
+                height: 40px;
+            }
+            p{
+                color: white;
+                font-size: 1.4rem;
+                transform: translate(10px,10px);
+                width: 350px;
+            }
+            &:nth-child(4){
+                p{
+                    transform: translate(10px,20px);
+                }
+            }
+        }
+    }
+    .footer{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        p{
+           padding: 40px 60px;
+           color: rgb(136, 135, 135);
+        }
+    }
+}

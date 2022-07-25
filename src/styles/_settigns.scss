@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'quicksand';
+    src: url('../fonts/Quicksand-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'fascinate';
+    src: url('../fonts/Fascinate-Regular.ttf');
+}
+@font-face {
+    font-family: 'inter';
+    src: url('../fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+@font-face {
+    font-family: 'orbitron';
+    src: url('../fonts/Orbitron-VariableFont_wght.ttf');
+}
+@mixin flexCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+$gris:#5c5b5b;
+
+$font1: "quicksand", sans-serif;
+$font2: "fascinate", sans-serif;
+$font3: "inter", sans-serif;
+$font4: "orbitron", sans-serif;
+$backGround:url('../assets/scaled.jpg');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    -webkit-tap-highlight-color: transparent;
+    ::-webkit-scrollbar{
+        width: 7px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background: linear-gradient(transparent,#04be32);
+        border-radius: 6px;
+    }
+}
+html {
+    font-size: 82%;
+}
+
+body {
+    font-weight: 400;
+    line-height: 1.5;
+    background: rgb(102, 102, 102);
+    font-family: $font4;
+}   
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+
+button,
+input {
+    outline: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+}
+.App{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 1fr;
+    grid-template-areas: "1" "2";
+    .Bar{
+        grid-area: 1;
+    }
+    .Routes{
+        grid-area: 2;
+        margin:2rem;
+    }
+}
+

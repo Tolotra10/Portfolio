@@ -1,0 +1,111 @@
+.skills{
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background: #272727;
+    height: 80vh;
+    .skillsContent{
+        color: aliceblue;
+        display: grid ;
+        grid-template-columns: 1fr 400px ;
+        grid-template-rows: auto ;
+        .skillsList{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-row: 2fr 1fr;
+            .divers{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-row: auto;
+                div{
+                    .title{
+                        display: flex;
+                        img{
+                            width: 30px;
+                            height: 30px;
+                            transform: translateX(-2px);
+                        }
+                        h1{
+                            color: #04be32;
+                            padding-bottom: .6rem;
+                        }
+                    }
+                    .list{
+                        p{
+                            cursor: default;
+                            &:hover{
+                                font-size: 1.2rem;
+                                color: tomato;
+                            }
+                        }
+                    }
+                }
+            }
+            .developpement{
+                padding-top: 1rem;
+                .title{
+                    display: flex;
+                    img{
+                        width: 30px;
+                        height: 30px;
+                        transform: translateX(-2px);
+                    }
+                    h1{
+                        color: #04be32;
+                        padding-bottom: .6rem;
+                    }
+                }
+                .list{
+                    p{
+                        cursor: default;
+                        &:hover{
+                            font-size: 1.2rem;
+                            color: tomato;
+                        }
+                    }
+                }
+                div{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-row: auto;
+                    h2{
+                        color: #88f5a3;
+                        padding-bottom: .6rem;
+                    }
+                    .language{
+                        display: flex;
+                        flex-direction: column;
+                        .list{
+                            display: block;
+                        }
+                    }
+                    .frameworks{
+                        display: flex;
+                        flex-direction: column;
+                        .list{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        .chart{
+            .content{
+                .data{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: auto;
+                    grid-gap: .5rem;
+                    .box{
+                        display: flex;
+                        .item{
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            margin-right: 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

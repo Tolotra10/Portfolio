@@ -1,0 +1,83 @@
+.reviews{
+    padding: 2rem;
+    border-radius: 1rem;
+    background: #272727;
+    height: 80vh;
+    h2{
+        text-align: center;
+        color: #04be32;
+    }
+    .reviewsContent{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 2rem;
+        form{
+            display: flex;
+            flex-direction: column;
+            padding-top: 4rem;
+            padding-left: 4rem;
+            input{
+                width: 70%;
+                height: 40px;
+                border-radius: 3px;
+                margin-bottom: .5rem;
+                outline: none;
+                border: none;
+                font-size: 1.1rem;
+                &:hover{
+                    outline: 2px solid#04be32;
+                }
+                &::placeholder{
+                    transform: translateY(2px);
+                    padding-left: .5rem;
+                    font-size: 1.2rem;
+                    font-family: $font3;
+                }
+            }
+            textarea{
+                width: 70%;
+                height: 170px;
+                resize: none;border-radius: 3px;
+                margin-bottom: .5rem;
+                outline: none;
+                border: none;
+                font-size: 1.1rem;
+                &:hover{
+                    outline: 2px solid#04be32;
+                }
+                &::placeholder{
+                    transform: translateY(10px);
+                    padding-left: .5rem;
+                    font-size: 1.2rem;
+                    font-family: $font3;
+                }
+                &:focus{
+                    padding: .5rem;
+                }
+            }
+            .btn{
+                background: #04be32;
+                color: aliceblue;
+                font-size: 1.3rem;
+                font-family: $font4;
+                cursor: pointer;
+                transition: .3s ease-in;
+                &:hover{
+                    outline: none;
+                    background: #000;
+                    transition: .3s ease-out;
+            }
+            }
+        }
+        .image{
+            margin-top: 16%;
+            margin-left: 80px;
+            img{
+                width:400px;
+                height:auto;
+            }
+        }
+    }
+   
+}
