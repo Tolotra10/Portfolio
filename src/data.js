@@ -16,7 +16,8 @@ export const personal = [
         img3:metier3,
         title:'Plateform de metiers',
         techno:[
-            {front:'ReactJs - Sass'}
+            {front:'TailwinCss - Sass - AlpineJs'},
+            {back:'Laravel - Mysql'}
         ]
     },
     
