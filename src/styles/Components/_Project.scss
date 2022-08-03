@@ -22,18 +22,29 @@
                 border-radius: 5px;
                 cursor: pointer;
                 transition: .3s ease;
-                p{
+                .info{
                     position: absolute;
-                    top: 50%;
-                    left: 50%;
+                    top: 55%;
+                    left: 80%;
                     transform: translate(-50%,-50%);
                     z-index: 999;
-                    font-size: 1.5rem;
                     background: rgba(255, 255, 255, .8);
-                    padding: 50%;
+                    width: 200%;
+                    padding: 40% 50% 50% 50%;
                     opacity: 0;
                     visibility: hidden;
                     transition: .3s ease;
+                    .techno{
+                        p{
+                            font-size: 1.3rem;
+                            font-weight: 600;
+                            color: #04be32;
+                        }
+                        span{
+                            font-size: 1.1rem;
+                            color: #272727;
+                        }
+                    }
                 }
                 .images{
                     img{
@@ -46,7 +57,7 @@
                     }
                 }
                 &:hover{
-                    p{
+                    .info{
                         opacity: 1;
                         visibility: visible;
                     }

@@ -1,5 +1,7 @@
 import React from 'react'
-import {data} from '../data'
+import {personal} from '../data'
+import {professionnal} from '../data'
+import Techno from './Techno';
 
 const Project = () => {
     return (
@@ -8,10 +10,16 @@ const Project = () => {
                 <h2>Personal project</h2>
                 <div className="list">
                 {
-                    data.map((item,index)=>{
+                    personal.map((item,index)=>{
+                        const technos = item.techno
                         return(
                             <div key={index} className='item'>
-                                <p>{item.legend}</p>
+                                <div className="info">
+                                    <div className="techno">
+                                        <p>{item.title}</p><br />
+                                        <Techno technos={technos}/>
+                                    </div>
+                                </div>
                                 <div className="images">
                                     <img src={item.img1} alt={item.id} />
                                     <img src={item.img2} alt={item.id} />
@@ -26,10 +34,16 @@ const Project = () => {
             <div className="projetContent"> <h2>Professional project</h2>
                 <div className="list">
                     {
-                        data.map((item,index)=>{
+                        professionnal.map((item,index)=>{
+                            const technos = item.techno
                             return(
                                 <div key={index} className='item'>
-                                    <p>{item.legend}</p>
+                                    <div className="info">
+                                        <div className="techno">
+                                            <p>{item.title}</p><br />
+                                            <Techno technos={technos}/>
+                                        </div>
+                                    </div>
                                     <div className="images">
                                         <img src={item.img1} alt={item.id} />
                                         <img src={item.img2} alt={item.id} />
